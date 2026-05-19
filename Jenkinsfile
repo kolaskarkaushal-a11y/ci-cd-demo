@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Python Script') {
             steps {
-                sh 'python3 string.py'
+                sh 'python3 Even.py'
             }
         }
     }
