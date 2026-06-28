@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Java') {
             steps {
-                sh 'java Palindrome'
+                sh 'java PalindromeNumber'
             }
         }
 
