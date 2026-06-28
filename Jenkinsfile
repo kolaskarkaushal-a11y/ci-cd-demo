@@ -73,7 +73,7 @@ pipeline {
 
 
                         sh '''
-                        g++ *.cpp -o app
+                        g++ Main.cpp -o app
                         ./app
                         '''
 
