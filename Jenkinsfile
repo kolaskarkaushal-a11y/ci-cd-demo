@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Python Script') {
+        stage('Run java Script') {
             steps {
-                sh 'python3 Even.py'
+                sh 'Palindrome.java'
             }
         }
     }
