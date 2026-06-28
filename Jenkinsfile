@@ -10,17 +10,18 @@ pipeline {
 
                 script {
 
-                    if (fileExists('*.java')) {
+
+                    if (fileExists('Palindrome.java')) {
 
                         env.LANGUAGE = "JAVA"
 
                     } 
-                    else if (fileExists('*.py')) {
+                    else if (fileExists('Even.py')) {
 
                         env.LANGUAGE = "PYTHON"
 
                     }
-                    else if (fileExists('*.cpp')) {
+                    else if (fileExists('Main.cpp')) {
 
                         env.LANGUAGE = "CPP"
 
