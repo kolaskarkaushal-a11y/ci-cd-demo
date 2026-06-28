@@ -2,9 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Run java Script') {
+        stage('Compile Java') {
             steps {
-                sh 'Palindrome.java'
+                sh 'javac Palindrome.java'
+            }
+        }
+
+        stage('Run Java') {
+            steps {
+                sh 'java Palindrome'
             }
         }
     }
