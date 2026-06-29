@@ -53,9 +53,9 @@ pipeline {
 
 
                         sh '''
-                        javac Largest.java
+                        /* javac Largest.java
                         java Largest
-                        '''
+                        '''*/
 
                     }
 
