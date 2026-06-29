@@ -11,7 +11,7 @@ pipeline {
                 script {
 
 
-                    if (fileExists('Palindrome.java')) {
+                    if (fileExists('Largest.java')) {
 
                         env.LANGUAGE = "JAVA"
 
@@ -53,8 +53,8 @@ pipeline {
 
 
                         sh '''
-                        javac Palindrome.java
-                        java PalindromeNumber
+                        javac Largest.java
+                        java Largest
                         '''
 
                     }
